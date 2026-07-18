@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/joepasos/static/css/main.1ea0ffde.css",
-    "main.js": "/joepasos/static/js/main.e81c038d.js",
-    "static/js/453.b05d8aa5.chunk.js": "/joepasos/static/js/453.b05d8aa5.chunk.js",
-    "static/media/mock10.png": "/joepasos/static/media/mock10.2d05b02ba569a430a255.png",
-    "static/media/mock09.png": "/joepasos/static/media/mock09.e18677ccfc932e52d754.png",
-    "static/media/mock08.png": "/joepasos/static/media/mock08.13f46873fdbd382f4b76.png",
-    "static/media/mock04.png": "/joepasos/static/media/mock04.f7b5679efade992a078c.png",
-    "static/media/bg-light.png": "/joepasos/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/mock07.png": "/joepasos/static/media/mock07.3f1110f482232b33c6a2.png",
-    "static/media/mock05.png": "/joepasos/static/media/mock05.4faafa70d200d1519a34.png",
-    "static/media/mock06.png": "/joepasos/static/media/mock06.ea816617e0d0fa0f63ca.png",
-    "static/media/bg-dark.png": "/joepasos/static/media/bg-dark.f420c6b8458af72de935.png",
-    "static/media/mock01.png": "/joepasos/static/media/mock01.61bd486a54bf6e17ee5a.png",
-    "static/media/mock02.png": "/joepasos/static/media/mock02.bced48ae9cdda3acf1a3.png",
-    "static/media/mock03.png": "/joepasos/static/media/mock03.a4600719e0b5d2a3155b.png",
-    "index.html": "/joepasos/index.html",
-    "main.1ea0ffde.css.map": "/joepasos/static/css/main.1ea0ffde.css.map",
-    "main.e81c038d.js.map": "/joepasos/static/js/main.e81c038d.js.map",
-    "453.b05d8aa5.chunk.js.map": "/joepasos/static/js/453.b05d8aa5.chunk.js.map"
+    "main.css": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/css/main.a62a17ca.css",
+    "main.js": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/js/main.296ae804.js",
+    "static/js/453.b05d8aa5.chunk.js": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/js/453.b05d8aa5.chunk.js",
+    "static/media/mock10.png": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/media/mock10.2d05b02ba569a430a255.png",
+    "static/media/mock09.png": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/media/mock09.e18677ccfc932e52d754.png",
+    "static/media/mock08.png": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/media/mock08.13f46873fdbd382f4b76.png",
+    "static/media/mock04.png": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/media/mock04.f7b5679efade992a078c.png",
+    "static/media/bg-light.png": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/mock07.png": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/media/mock07.3f1110f482232b33c6a2.png",
+    "static/media/mock05.png": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/media/mock05.4faafa70d200d1519a34.png",
+    "static/media/mock06.png": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/media/mock06.ea816617e0d0fa0f63ca.png",
+    "static/media/bg-dark.png": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/mock01.png": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/media/mock01.61bd486a54bf6e17ee5a.png",
+    "static/media/mock02.png": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/media/mock02.bced48ae9cdda3acf1a3.png",
+    "static/media/mock03.png": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/media/mock03.a4600719e0b5d2a3155b.png",
+    "index.html": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/index.html",
+    "main.a62a17ca.css.map": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/css/main.a62a17ca.css.map",
+    "main.296ae804.js.map": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/js/main.296ae804.js.map",
+    "453.b05d8aa5.chunk.js.map": "/[https://joecausos.github.io/joepasos/](https://joecausos.github.io/joepasos/)/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ea0ffde.css",
-    "static/js/main.e81c038d.js"
+    "static/css/main.a62a17ca.css",
+    "static/js/main.296ae804.js"
   ]
 }
