@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import '../assets/styles/Contact.scss';
-import emailjs from '@emailjs/browser'; // Uncomment this
+import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
@@ -15,42 +15,30 @@ function Contact() {
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
 
-  const form = useRef<any>(null); // Added type
+  // --- REPLACE THESE WITH YOUR ACTUAL EMAILJS IDS ---
+  const SERVICE_ID = "YOUR_SERVICE_ID";
+  const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+  const PUBLIC_KEY = "YOUR_PUBLIC_KEY";
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
+    // Reset errors
     setNameError(name === '');
     setEmailError(email === '');
     setMessageError(message === '');
 
     if (name !== '' && email !== '' && message !== '') {
-      var templateParams = {
-        name: name,
-        email: email,
-        message: message
-      };
-
-      // Using process.env to safely pull your keys
-      emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID!, 
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID!, 
-        templateParams, 
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
-      ).then(
-        (response) => {
-          console.log('SUCCESS!', response.status, response.text);
+      emailjs.send(SERVICE_ID, TEMPLATE_ID, { name, email, message }, PUBLIC_KEY)
+        .then(() => {
           alert("Message sent successfully!");
-        },
-        (error) => {
+          setName('');
+          setEmail('');
+          setMessage('');
+        }, (error) => {
           console.log('FAILED...', error);
           alert("Failed to send message, please try again.");
-        },
-      );
-      
-      setName('');
-      setEmail('');
-      setMessage('');
+        });
     }
   };
 
@@ -60,37 +48,35 @@ function Contact() {
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
           <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
+          
           <Box
             component="form"
+            className="contact-form"
             noValidate
             autoComplete="off"
-            className='contact-form'
+            onSubmit={sendEmail}
           >
-            <div className='form-flex'>
+            <div className="form-flex">
               <TextField
                 required
-                id="outlined-required"
                 label="Your Name"
                 placeholder="What's your name?"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 error={nameError}
-                helperText={nameError ? "Please enter your name" : ""}
               />
               <TextField
                 required
-                id="outlined-required"
                 label="Email / Phone"
                 placeholder="How can I reach you?"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 error={emailError}
-                helperText={emailError ? "Please enter your email or phone number" : ""}
               />
             </div>
+            
             <TextField
               required
-              id="outlined-multiline-static"
               label="Message"
               placeholder="Send me any inquiries or questions"
               multiline
@@ -99,8 +85,8 @@ function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               error={messageError}
-              helperText={messageError ? "Please enter the message" : ""}
             />
+            
             <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
               Send
             </Button>

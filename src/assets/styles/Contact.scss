@@ -1,11 +1,21 @@
-.contact_wrapper svg {
-  font-size: 1em;
-  vertical-align: middle;
-  margin-right: 5px;
+/* Contact.scss */
+
+.contact_wrapper {
+  position: relative;
+  z-index: 10;
+  
+  svg {
+    font-size: 1em;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
 }
 
 .contact-form {
   padding-top: 20px;
+  position: relative;
+  z-index: 1000; /* Moves the form above other elements */
+  pointer-events: auto !important; /* Unlocks the inputs */
 
   button {
     float: right;
@@ -20,6 +30,12 @@
 
   fieldset {
     background-color: white;
+  }
+
+  /* Force the inputs themselves to be clickable */
+  input, textarea {
+    pointer-events: auto !important;
+    cursor: text !important;
   }
 }
 
