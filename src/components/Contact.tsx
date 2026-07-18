@@ -17,9 +17,9 @@ function Contact() {
 
   // --- REPLACE THESE WITH YOUR ACTUAL EMAILJS IDS ---
   // NOTE: If using process.env, ensure your .env file is in the root directory
-  const SERVICE_ID = "YOUR_SERVICE_ID";
-  const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-  const PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+  const SERVICE_ID = "service_cq64g3o";
+  const TEMPLATE_ID = "template_hd6d5uk";
+  const PUBLIC_KEY = "RCgSYOs0W-D5teytC";
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
