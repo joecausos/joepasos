@@ -1,63 +1,33 @@
-/* Contact.scss */
+/* Contact.scss - Cleaned Version */
 
-/* Standard Layout Styles */
-.contact_wrapper {
+.contact-form {
+  /* Keep the form on top */
   position: relative;
   z-index: 10;
   
-  svg {
-    font-size: 1em;
-    vertical-align: middle;
-    margin-right: 5px;
-  }
-}
-
-.contact-form {
-  padding-top: 20px;
-  
+  /* Reset button to default layout */
   button {
-    float: right;
+    margin-top: 15px;
     background-color: white;
     color: #050f0b;
   }
 
-  button:hover {
-    background-color: #5000ca;
-    color: white;
+  /* Force Text Visibility for MUI Inputs */
+  .MuiInputBase-input, 
+  .MuiInputBase-root {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    caret-color: #000000 !important;
   }
 
-  fieldset {
-    background-color: white;
+  /* Force Labels to be visible */
+  .MuiInputLabel-root, 
+  .MuiInputLabel-root.Mui-focused {
+    color: #333333 !important;
   }
 }
 
-label {
-  font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
-}
-
-.form-flex {
-  display: flex;
-  gap: 15px;
-  padding-bottom: 15px;
-}
-
-.form-flex .MuiFormControl-root {
-  width: 100%;
-}
-
-form {
-  width: 100% !important;
-}
-
-.body-form {
-  width: 100% !important;
-  margin-bottom: 15px !important;
-}
-
-/* --- FIXES --- */
-
-/* 1. Fix for the yellow autofill background */
+/* Fix Autofill background */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -65,11 +35,19 @@ textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px white inset !important;
-  -webkit-text-fill-color: black !important; /* Forces font to black */
+  -webkit-text-fill-color: #000000 !important;
   transition: background-color 5000s ease-in-out 0s;
 }
 
-/* 2. Ensure standard text is black */
-.MuiInputBase-input, .MuiInputBase-root {
-  color: black !important;
+/* Layout Utilities */
+.form-flex {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.body-form {
+  width: 100%;
+  margin-bottom: 15px;
 }
