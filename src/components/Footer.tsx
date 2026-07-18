@@ -4,6 +4,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Footer.scss'
 
 function Footer() {
+    return null;
+}
+
+// function Footer() {
 //   return (
 //     <footer>
 //       <div>
