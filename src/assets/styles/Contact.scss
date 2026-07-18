@@ -62,3 +62,24 @@ form {
   width: 100% !important;
   margin-bottom: 15px !important;
 }
+
+/* Force focus and interaction on all Material UI inputs */
+.MuiInputBase-root, 
+.MuiInputBase-input, 
+.MuiTextField-root,
+input, 
+textarea {
+  pointer-events: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  cursor: text !important;
+  z-index: 99999 !important;
+  position: relative !important;
+}
+
+/* Ensure no parent container is stealing the click */
+.contact-form, .contact_wrapper {
+  pointer-events: auto !important;
+}
