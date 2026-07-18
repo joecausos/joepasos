@@ -3,7 +3,7 @@
 Welcome to my personal portfolio. This site showcases my journey in engineering, quality assurance, and my transition into Tech.
 
 ## 🚀 Live Demo
-[View my portfolio here](https://https://joecausos.github.io/joepasos/)
+[View my portfolio here](https://joecausos.github.io/joepasos/)
 
 ## 🛠 Tech Stack
 Built with modern web technologies:
