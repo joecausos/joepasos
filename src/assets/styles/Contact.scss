@@ -83,3 +83,11 @@ textarea {
 .contact-form, .contact_wrapper {
   pointer-events: auto !important;
 }
+
+/* DEBUG: Force visible text and background to see if we're typing */
+.contact-form input, 
+.contact-form textarea {
+  color: #000000 !important;        /* Force text to be black */
+  background-color: #ffff99 !important; /* Force background to be light yellow */
+  -webkit-text-fill-color: #000000 !important; /* Force Safari/Chrome to show black */
+}
