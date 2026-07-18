@@ -16,6 +16,7 @@ function Contact() {
   const [messageError, setMessageError] = useState<boolean>(false);
 
   // --- REPLACE THESE WITH YOUR ACTUAL EMAILJS IDS ---
+  // NOTE: If using process.env, ensure your .env file is in the root directory
   const SERVICE_ID = "YOUR_SERVICE_ID";
   const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
   const PUBLIC_KEY = "YOUR_PUBLIC_KEY";
@@ -23,21 +24,21 @@ function Contact() {
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Reset errors
     setNameError(name === '');
     setEmailError(email === '');
     setMessageError(message === '');
 
     if (name !== '' && email !== '' && message !== '') {
       emailjs.send(SERVICE_ID, TEMPLATE_ID, { name, email, message }, PUBLIC_KEY)
-        .then(() => {
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
           alert("Message sent successfully!");
           setName('');
           setEmail('');
           setMessage('');
-        }, (error) => {
-          console.log('FAILED...', error);
-          alert("Failed to send message, please try again.");
+        }, (err) => {
+          console.error('FAILED...', err);
+          alert(`Failed to send message: ${err.text || err}`);
         });
     }
   };

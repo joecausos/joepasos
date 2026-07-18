@@ -1,5 +1,6 @@
 /* Contact.scss */
 
+/* Standard Layout Styles */
 .contact_wrapper {
   position: relative;
   z-index: 10;
@@ -13,10 +14,7 @@
 
 .contact-form {
   padding-top: 20px;
-  position: relative;
-  z-index: 1000; /* Moves the form above other elements */
-  pointer-events: auto !important; /* Unlocks the inputs */
-
+  
   button {
     float: right;
     background-color: white;
@@ -30,12 +28,6 @@
 
   fieldset {
     background-color: white;
-  }
-
-  /* Force the inputs themselves to be clickable */
-  input, textarea {
-    pointer-events: auto !important;
-    cursor: text !important;
   }
 }
 
@@ -63,31 +55,21 @@ form {
   margin-bottom: 15px !important;
 }
 
-/* Force focus and interaction on all Material UI inputs */
-.MuiInputBase-root, 
-.MuiInputBase-input, 
-.MuiTextField-root,
-input, 
-textarea {
-  pointer-events: auto !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  user-select: text !important;
-  -webkit-user-select: text !important;
-  cursor: text !important;
-  z-index: 99999 !important;
-  position: relative !important;
+/* --- FIXES --- */
+
+/* 1. Fix for the yellow autofill background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  -webkit-text-fill-color: black !important; /* Forces font to black */
+  transition: background-color 5000s ease-in-out 0s;
 }
 
-/* Ensure no parent container is stealing the click */
-.contact-form, .contact_wrapper {
-  pointer-events: auto !important;
-}
-
-/* DEBUG: Force visible text and background to see if we're typing */
-.contact-form input, 
-.contact-form textarea {
-  color: #000000 !important;        /* Force text to be black */
-  background-color: #ffff99 !important; /* Force background to be light yellow */
-  -webkit-text-fill-color: #000000 !important; /* Force Safari/Chrome to show black */
+/* 2. Ensure standard text is black */
+.MuiInputBase-input, .MuiInputBase-root {
+  color: black !important;
 }
