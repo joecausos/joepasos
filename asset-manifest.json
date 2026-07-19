@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/joepasos/static/css/main.bae6756d.css",
+    "main.css": "/joepasos/static/css/main.8a10ce2a.css",
     "main.js": "/joepasos/static/js/main.5061f39f.js",
     "static/js/453.b05d8aa5.chunk.js": "/joepasos/static/js/453.b05d8aa5.chunk.js",
     "static/media/project_001_technical_seo_github.png": "/joepasos/static/media/project_001_technical_seo_github.be6b6ca825513f56d85d.png",
@@ -8,12 +8,12 @@
     "static/media/bg-light.png": "/joepasos/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/joepasos/static/media/bg-dark.f420c6b8458af72de935.png",
     "index.html": "/joepasos/index.html",
-    "main.bae6756d.css.map": "/joepasos/static/css/main.bae6756d.css.map",
+    "main.8a10ce2a.css.map": "/joepasos/static/css/main.8a10ce2a.css.map",
     "main.5061f39f.js.map": "/joepasos/static/js/main.5061f39f.js.map",
     "453.b05d8aa5.chunk.js.map": "/joepasos/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bae6756d.css",
+    "static/css/main.8a10ce2a.css",
     "static/js/main.5061f39f.js"
   ]
 }
