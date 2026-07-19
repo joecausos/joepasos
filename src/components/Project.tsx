@@ -1,23 +1,45 @@
 import React, { useState } from "react";
-// KEEP YOUR EXISTING IMPORTS
-import mock10 from '../assets/images/mock10.png';
+// IMPORT YOUR IMAGES HERE
+import project_001_technical_seo_github from '../assets/images/project_001_technical_seo_github.png';
 import '../assets/styles/Project.scss';
 
-// Add your projects here
-const projectData = [
+// Define the shape of a Project for TypeScript
+interface ProjectItem {
+  id: number;
+  name: string;
+  category: string;
+  description: string;
+  link: string;
+  repo: string;
+  image: string;
+}
+
+const projectData: ProjectItem[] = [
   {
     id: 10,
-    name: "Filmate AI",
-    category: "Data Analysis",
-    description: "Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.",
-    link: "https://www.filmate.club/",
-    image: mock10
+    name: "Technical SEO Audit of GitHub.io Page",
+    category: "Technical SEO",
+    description: "This project involved conducting a comprehensive technical SEO audit of a GitHub.io page. The audit focused on identifying and resolving issues related to site structure, meta tags, page speed, mobile responsiveness, and other critical SEO factors.",
+    link: "https://joecausos.github.io/joepasos",
+    repo: "https://github.com/joepasos/technical-seo",
+    image: project_001_technical_seo_github
   },
+
+  {
+    id: 11, // ALWAYS use a unique number (increment it by 1)
+    name: "Project Title",
+    category: "DevOps", // Must match your category list exactly
+    description: "Brief, punchy description of what you built and the value it provides.",
+    link: "https://your-live-link.com",
+    repo: "https://github.com/your-username/repo-name",
+    image: project_001_technical_seo_github// Use the variable you imported above
+  },
+
 ];
 
-function Project() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const categories = ["All", "Data Analysis", "Reliability Engineering", "Technical SEO",];
+function Projects() {
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const categories = ["All", "Data Analysis", "DevOps", "Reliability Engineering", "Technical SEO"];
 
   const filteredProjects = selectedCategory === "All" 
     ? projectData 
@@ -39,24 +61,28 @@ function Project() {
         ))}
       </div>
 
-      <br />
-      
       <div className="projects-grid">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
-            <div className="project" key={project.id}>
-              <a href={project.link} target="_blank" rel="noreferrer">
-                <img src={project.image} className="zoom" alt={project.name} width="100%"/>
-              </a>
-              <a href={project.link} target="_blank" rel="noreferrer">
-                <h2>{project.name}</h2>
-              </a>
-              <p>{project.description}</p>
+            <div className="project-card" key={project.id}>
+              <div className="project-image">
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  <img src={project.image} alt={project.name} />
+                </a>
+              </div>
+              <div className="project-content">
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
+              </div>
+              <div className="project-actions">
+                <a href={project.link} target="_blank" rel="noreferrer" className="btn-primary">Live Site</a>
+                <a href={project.repo} target="_blank" rel="noreferrer" className="btn-secondary">GitHub</a>
+              </div>
             </div>
           ))
         ) : (
           <div className="coming-soon-card">
-            <h3>Coming Soon</h3>
+            <h3>🚀 Coming Soon</h3>
             <p>I am currently documenting my {selectedCategory} work. Check back later!</p>
           </div>
         )}
@@ -65,4 +91,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default Projects;
