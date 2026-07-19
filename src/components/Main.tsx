@@ -18,7 +18,7 @@ function Main() {
             <a href="https://github.com/joecausos" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/joepasos/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
-          <h1>Joe Pasos</h1>
+          <h1>Technical SEO Specialist & Reliability Engineering Portfolio</h1>
           <p>Senior Quality & Machine Reliability Engineer</p>
 
           <div className="mobile_social_icons">
