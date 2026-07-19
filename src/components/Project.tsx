@@ -17,7 +17,7 @@ const projectData = [
 
 function Project() {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const categories = ["All", "Data Analysis", "DevOps", "Reliability Engineering"];
+  const categories = ["All", "Data Analysis", "Reliability Engineering", "Technical SEO",];
 
   const filteredProjects = selectedCategory === "All" 
     ? projectData 
