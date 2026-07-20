@@ -1,0 +1,22 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    text-align: left;
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin-bottom: 15px;
+        opacity: 0.9;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

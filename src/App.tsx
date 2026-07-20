@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from "react";
 import {
-  Main,
-  Timeline,
-  Expertise,
-  Project,
-  Contact,
-  Navigation,
-  Footer,
+    Main,
+    About,          // 1. Import About
+    Expertise,
+    Timeline,
+    Project,
+    Certifications, // 2. Import Certifications
+    Contact,
+    Navigation,
+    Footer,
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
@@ -31,9 +33,11 @@ function App() {
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
         <FadeIn transitionDuration={700}>
             <Main/>
+            <About/>           {/* Placed right after the hero banner */}
             <Expertise/>
             <Timeline/>
             <Project/>
+            <Certifications/>  {/* Placed right after your practical projects */}
             <Contact/>
         </FadeIn>
         <Footer />

@@ -21,12 +21,42 @@ const projectData: ProjectItem[] = [
     category: "Technical SEO",
     description: "This project involved conducting a comprehensive technical SEO audit of a GitHub.io page. The audit focused on identifying and resolving issues related to site structure, meta tags, page speed, mobile responsiveness, and other critical SEO factors.",
     link: "https://joecausos.github.io/joepasos",
-    repo: "https://github.com/joepasos/technical-seo",
+    repo: "https://github.com/joecausos/technical-seo/tree/main/projects/001_github.io",
     image: project_001_technical_seo_github
   },
 
   {
     id: 11, // ALWAYS use a unique number (increment it by 1)
+    name: "Project Title",
+    category: "DevOps", // Must match your category list exactly
+    description: "Brief, punchy description of what you built and the value it provides.",
+    link: "https://your-live-link.com",
+    repo: "https://github.com/your-username/repo-name",
+    image: project_001_technical_seo_github// Use the variable you imported above
+  },
+
+  {
+    id: 12, // ALWAYS use a unique number (increment it by 1)
+    name: "Project Title",
+    category: "DevOps", // Must match your category list exactly
+    description: "Brief, punchy description of what you built and the value it provides.",
+    link: "https://your-live-link.com",
+    repo: "https://github.com/your-username/repo-name",
+    image: project_001_technical_seo_github// Use the variable you imported above
+  },
+
+  {
+    id: 11, // ALWAYS use a unique number (increment it by 1)
+    name: "Project Title",
+    category: "DevOps", // Must match your category list exactly
+    description: "Brief, punchy description of what you built and the value it provides.",
+    link: "https://your-live-link.com",
+    repo: "https://github.com/your-username/repo-name",
+    image: project_001_technical_seo_github// Use the variable you imported above
+  },
+
+  {
+    id: 12, // ALWAYS use a unique number (increment it by 1)
     name: "Project Title",
     category: "DevOps", // Must match your category list exactly
     description: "Brief, punchy description of what you built and the value it provides.",
