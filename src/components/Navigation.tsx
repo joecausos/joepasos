@@ -18,7 +18,6 @@ import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
 
-// Added About and Certifications to the nav items list
 const navItems = [
   ['About', 'about'],
   ['Expertise', 'expertise'],
@@ -29,7 +28,6 @@ const navItems = [
 ];
 
 function Navigation({parentToChild, modeChange}: any) {
-
   const {mode} = parentToChild;
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
@@ -56,24 +54,22 @@ function Navigation({parentToChild, modeChange}: any) {
   }, []);
 
   const scrollToSection = (section: string) => {
-    console.log(section)
     const targetElement = document.getElementById(section);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
-      console.log('Scrolling to:', targetElement); 
-    } else {
-      console.error(`Element with id "${section}" not found`); 
     }
   };
 
   const drawer = (
-    <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <p className="mobile-menu-top"><ListIcon/>Menu</p>
+    <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'left' }}>
+      <p className="mobile-menu-top" style={{ textAlign: 'left', paddingLeft: '24px', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <ListIcon /> Menu
+      </p>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item[0]} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
+            <ListItemButton sx={{ textAlign: 'left', pl: 3 }} onClick={() => scrollToSection(item[1])}>
               <ListItemText primary={item[0]} />
             </ListItemButton>
           </ListItem>
@@ -85,29 +81,55 @@ function Navigation({parentToChild, modeChange}: any) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" id="navigation" className={`navbar-fixed-top${scrolled ? ' scrolled' : ''}`}>
-        <Toolbar className='navigation-bar'>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          {mode === 'dark' ? (
-            <LightModeIcon onClick={() => modeChange()}/>
-          ) : (
-            <DarkModeIcon onClick={() => modeChange()}/>
-          )}
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
-                {item[0]}
-              </Button>
-            ))}
+      <AppBar 
+        component="nav" 
+        id="navigation" 
+        className={`navbar-fixed-top${scrolled ? ' scrolled' : ''}`} 
+        elevation={0}
+        sx={{ 
+          backgroundColor: scrolled ? (mode === 'dark' ? '#0d1117' : '#ffffff') : 'transparent',
+          color: mode === 'dark' ? '#ffffff' : '#000000',
+          transition: 'background-color 0.3s ease'
+        }}
+      >
+        <Toolbar className='navigation-bar' sx={{ justifyContent: 'space-between', width: '100%' }}>
+          
+          {/* LEFT SIDE: Hamburger (Mobile) / Theme Selector (Desktop) */}
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ display: { sm: 'none' }, mr: 1 }}
+            >
+              <MenuIcon />
+            </IconButton>
+
+            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+              <IconButton onClick={() => modeChange()} color="inherit">
+                {mode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
+              </IconButton>
+            </Box>
           </Box>
+
+          {/* RIGHT SIDE: Nav Bar Links (Desktop) / Theme Selector (Mobile) */}
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: 1 }}>
+              {navItems.map((item) => (
+                <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: 'inherit' }}>
+                  {item[0]}
+                </Button>
+              ))}
+            </Box>
+
+            <Box sx={{ display: { sm: 'none' } }}>
+              <IconButton onClick={() => modeChange()} color="inherit">
+                {mode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
+              </IconButton>
+            </Box>
+          </Box>
+
         </Toolbar>
       </AppBar>
       <nav>

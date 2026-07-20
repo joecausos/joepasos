@@ -1,40 +1,118 @@
-/* Contact.scss - Cleaned Version */
+/* Contact.scss - Unified White Card Container & Clean Inputs */
 
 .contact-form {
-  /* Keep the form on top */
   position: relative;
   z-index: 10;
+  background-color: #ffffff !important; /* Matches the white card tone of projects/certificates */
+  color: #000000 !important;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+  margin: 0 auto;
+
+  h2, h3, h4, span {
+    color: #000000 !important;
+  }
+
+  p {
+    color: #333333 !important;
+  }
   
-  /* Reset button to default layout */
   button {
     margin-top: 15px;
-    background-color: white;
-    color: #050f0b;
+    background-color: #5000ca;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 24px;
+    &:hover {
+      background-color: #3f009e;
+    }
   }
 
-  /* Force Text Visibility for MUI Inputs */
-  .MuiInputBase-input, 
-  .MuiInputBase-root {
-    color: #000000 !important;
+  /* Input fields inside the contact card */
+  input, 
+  textarea, 
+  .MuiOutlinedInput-root {
+    background-color: #f9f9f9 !important; 
+    color: #000000 !important;             
     -webkit-text-fill-color: #000000 !important;
     caret-color: #000000 !important;
+    border-radius: 12px !important;
   }
 
-  /* Force Labels to be visible */
-  .MuiInputLabel-root, 
+  /* Match the border outline to the rounded corners */
+  .MuiOutlinedInput-notchedOutline {
+    border-color: #cccccc !important;
+    border-radius: 12px !important;
+  }
+
+  /* Restores the input labels with a clear, dark gray color */
+  .MuiInputLabel-root {
+    color: #666666 !important;
+  }
+
   .MuiInputLabel-root.Mui-focused {
-    color: #333333 !important;
+    color: #000000 !important;
+  }
+
+  /* Fallback placeholder text color */
+  input::placeholder,
+  textarea::placeholder {
+    color: #666666 !important;
+    opacity: 1 !important;
   }
 }
 
-/* Fix Autofill background */
+/* Ensure the card style remains crisp and clean even when Dark Mode is active on the site */
+.dark-mode {
+  .contact-form {
+    background-color: #ffffff !important; 
+    color: #000000 !important;
+
+    h2, h3, h4, span, p {
+      color: #000000 !important;
+    }
+
+    input, 
+    textarea, 
+    .MuiOutlinedInput-root {
+      background-color: #f9f9f9 !important; 
+      color: #000000 !important;             
+      -webkit-text-fill-color: #000000 !important;
+      caret-color: #000000 !important;
+      border-radius: 12px !important;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      border-color: #cccccc !important;
+      border-radius: 12px !important;
+    }
+
+    .MuiInputLabel-root {
+      color: #666666 !important;
+    }
+
+    .MuiInputLabel-root.Mui-focused {
+      color: #000000 !important;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #666666 !important;
+      opacity: 1 !important;
+    }
+  }
+}
+
+/* Fix Autofill background color bug on mobile */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px #f9f9f9 inset !important;
   -webkit-text-fill-color: #000000 !important;
   transition: background-color 5000s ease-in-out 0s;
 }

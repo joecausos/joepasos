@@ -25,45 +25,45 @@ const projectData: ProjectItem[] = [
     image: project_001_technical_seo_github
   },
 
-  {
-    id: 11, // ALWAYS use a unique number (increment it by 1)
-    name: "Project Title",
-    category: "DevOps", // Must match your category list exactly
-    description: "Brief, punchy description of what you built and the value it provides.",
-    link: "https://your-live-link.com",
-    repo: "https://github.com/your-username/repo-name",
-    image: project_001_technical_seo_github// Use the variable you imported above
-  },
+  // {
+  //   id: 11, // ALWAYS use a unique number (increment it by 1)
+  //   name: "Project Title",
+  //   category: "DevOps", // Must match your category list exactly
+  //   description: "Brief, punchy description of what you built and the value it provides.",
+  //   link: "https://your-live-link.com",
+  //   repo: "https://github.com/your-username/repo-name",
+  //   image: project_001_technical_seo_github// Use the variable you imported above
+  // },
 
-  {
-    id: 12, // ALWAYS use a unique number (increment it by 1)
-    name: "Project Title",
-    category: "DevOps", // Must match your category list exactly
-    description: "Brief, punchy description of what you built and the value it provides.",
-    link: "https://your-live-link.com",
-    repo: "https://github.com/your-username/repo-name",
-    image: project_001_technical_seo_github// Use the variable you imported above
-  },
+  // {
+  //   id: 12, // ALWAYS use a unique number (increment it by 1)
+  //   name: "Project Title",
+  //   category: "DevOps", // Must match your category list exactly
+  //   description: "Brief, punchy description of what you built and the value it provides.",
+  //   link: "https://your-live-link.com",
+  //   repo: "https://github.com/your-username/repo-name",
+  //   image: project_001_technical_seo_github// Use the variable you imported above
+  // },
 
-  {
-    id: 11, // ALWAYS use a unique number (increment it by 1)
-    name: "Project Title",
-    category: "DevOps", // Must match your category list exactly
-    description: "Brief, punchy description of what you built and the value it provides.",
-    link: "https://your-live-link.com",
-    repo: "https://github.com/your-username/repo-name",
-    image: project_001_technical_seo_github// Use the variable you imported above
-  },
+  // {
+  //   id: 11, // ALWAYS use a unique number (increment it by 1)
+  //   name: "Project Title",
+  //   category: "DevOps", // Must match your category list exactly
+  //   description: "Brief, punchy description of what you built and the value it provides.",
+  //   link: "https://your-live-link.com",
+  //   repo: "https://github.com/your-username/repo-name",
+  //   image: project_001_technical_seo_github// Use the variable you imported above
+  // },
 
-  {
-    id: 12, // ALWAYS use a unique number (increment it by 1)
-    name: "Project Title",
-    category: "DevOps", // Must match your category list exactly
-    description: "Brief, punchy description of what you built and the value it provides.",
-    link: "https://your-live-link.com",
-    repo: "https://github.com/your-username/repo-name",
-    image: project_001_technical_seo_github// Use the variable you imported above
-  },
+  // {
+  //   id: 12, // ALWAYS use a unique number (increment it by 1)
+  //   name: "Project Title",
+  //   category: "DevOps", // Must match your category list exactly
+  //   description: "Brief, punchy description of what you built and the value it provides.",
+  //   link: "https://your-live-link.com",
+  //   repo: "https://github.com/your-username/repo-name",
+  //   image: project_001_technical_seo_github// Use the variable you imported above
+  // },
 
 ];
 
