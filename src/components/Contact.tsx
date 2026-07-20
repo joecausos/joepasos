@@ -61,15 +61,15 @@ function Contact() {
               <TextField
                 required
                 label="Your Name"
-                placeholder="What's your name?"
+                placeholder=""
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 error={nameError}
               />
               <TextField
                 required
-                label="Email / Phone"
-                placeholder="How can I reach you?"
+                label="Email"
+                placeholder=""
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 error={emailError}
@@ -79,7 +79,7 @@ function Contact() {
             <TextField
               required
               label="Message"
-              placeholder="Send me any inquiries or questions"
+              placeholder=""
               multiline
               rows={10}
               className="body-form"
