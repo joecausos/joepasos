@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/joepasos/static/css/main.d8d4e5d4.css",
-    "main.js": "/joepasos/static/js/main.402cb3b7.js",
+    "main.css": "/joepasos/static/css/main.d12e670e.css",
+    "main.js": "/joepasos/static/js/main.e02438ec.js",
     "static/js/453.b05d8aa5.chunk.js": "/joepasos/static/js/453.b05d8aa5.chunk.js",
     "static/media/project_001_technical_seo_github.png": "/joepasos/static/media/project_001_technical_seo_github.be6b6ca825513f56d85d.png",
     "static/media/JoePasos.png": "/joepasos/static/media/JoePasos.c486aa9b9b69d7dd1d12.png",
@@ -9,12 +9,12 @@
     "static/media/six_sigma_black_belt_certificate.png": "/joepasos/static/media/six_sigma_black_belt_certificate.af91f52b79330d0c93fb.png",
     "static/media/bg-dark.png": "/joepasos/static/media/bg-dark.f420c6b8458af72de935.png",
     "index.html": "/joepasos/index.html",
-    "main.d8d4e5d4.css.map": "/joepasos/static/css/main.d8d4e5d4.css.map",
-    "main.402cb3b7.js.map": "/joepasos/static/js/main.402cb3b7.js.map",
+    "main.d12e670e.css.map": "/joepasos/static/css/main.d12e670e.css.map",
+    "main.e02438ec.js.map": "/joepasos/static/js/main.e02438ec.js.map",
     "453.b05d8aa5.chunk.js.map": "/joepasos/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8d4e5d4.css",
-    "static/js/main.402cb3b7.js"
+    "static/css/main.d12e670e.css",
+    "static/js/main.e02438ec.js"
   ]
 }
