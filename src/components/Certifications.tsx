@@ -20,7 +20,7 @@ const certificationData: CertificationItem[] = [
     id: 1,
     name: "Certified Lean Six Sigma Black Belt",
     issuer: "Six Sigma Academy Amsterdam (SSAA)",
-    date: "2024",
+    date: "2025",
     credentialId: "ac1c65b4-9177-4f7b-9797-098741af8d57",
     verifyLink: "https://www.virtualbadge.io/certificate-validator?credential=ac1c65b4-9177-4f7b-9797-098741af8d57",
     image: six_sigma_black_belt_certificate
