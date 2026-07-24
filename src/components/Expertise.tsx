@@ -7,20 +7,20 @@ import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
     "Python",
-    "SQL",
-    "Six Sigma", // Fixed spelling from "Sig Sigma"
-    "Reliability",
+    "PostgreSQL",
     "Grafana",
 ];
 
 const labelsSecond = [
-    "Git",
     "Knime",
     "PostgreSQL",
 ];
 
 const labelsThird = [
     "DMAIC",
+    "Lean",
+    "Root Cause Analysis",
+    "Kaizen",
 ];
 
 function Expertise() {
@@ -52,7 +52,7 @@ function Expertise() {
                     <FontAwesomeIcon icon={faGear} size="3x"/>
                     <h3>Automation & Infrastructure</h3>
                     <p style={{ textAlign: 'justify' }}>
-                        Design and deploy scalable testing matrixes, robust CI/CD pipelines, and infrastructure 
+                        Design and deploy scalable testing matrixes, and infrastructure 
                         automations. I bridge the gap between engineering theory and production, ensuring system 
                         stability, minimal downtime, and seamless, predictable deployment cycles.
                     </p>
@@ -74,7 +74,7 @@ function Expertise() {
                         enhance system reliability, and deliver measurable business value.
                     </p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Framework:</span>
                         {labelsThird.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
