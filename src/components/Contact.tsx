@@ -81,7 +81,7 @@ function Contact() {
               label="Message"
               placeholder=""
               multiline
-              rows={10}
+              rows={5}
               className="body-form"
               value={message}
               onChange={(e) => setMessage(e.target.value)}

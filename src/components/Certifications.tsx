@@ -25,15 +25,15 @@ const certificationData: CertificationItem[] = [
     verifyLink: "https://www.virtualbadge.io/certificate-validator?credential=ac1c65b4-9177-4f7b-9797-098741af8d57",
     image: six_sigma_black_belt_certificate
   },
-  {
-    id: 2,
-    name: "Certified Lean Six Sigma Green Belt",
-    issuer: "Advanced Innovation Group Pro Excellence (AIGPE)",
-    date: "2023",
-    credentialId: "95637114910787",
-    verifyLink: "https://digitalcredentials.aigproexcellence.com/en/verify/95637114910787?ref=email",
-    image: "https://storage.googleapis.com/verified-storage/cert/95637114910787.png"
-  },
+  // {
+  //   id: 2,
+  //   name: "Certified Lean Six Sigma Green Belt",
+  //   issuer: "Advanced Innovation Group Pro Excellence (AIGPE)",
+  //   date: "2023",
+  //   credentialId: "95637114910787",
+  //   verifyLink: "https://digitalcredentials.aigproexcellence.com/en/verify/95637114910787?ref=email",
+  //   image: "https://storage.googleapis.com/verified-storage/cert/95637114910787.png"
+  // },
   // {
   //   id: 3,
   //   name: "Project Management Professional (PMP)",
