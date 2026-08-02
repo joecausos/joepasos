@@ -98,14 +98,9 @@ function Timeline() {
             <h4 className="vertical-timeline-element-subtitle">Olongapo, Luzon, PH</h4>
             <br></br>
             <ul style={{ paddingLeft: '20px', margin: '0 0 15px 0' }}>
-              <li style={{ marginBottom: '5px' }}>Spearheaded the development of automated testing equipment, achieving a 20% reduction in testing time</li>
-              <li style={{ marginBottom: '5px' }}>Assessed complex technical documentation to ensure full alignment with customer-defined requirements</li>
-              <li style={{ marginBottom: '5px' }}>Implemented automated inspection systems to enhance precision and operational consistency</li>
-            </ul>
-
-            <h4 className="vertical-timeline-element-subtitle" style={{ marginTop: '15px', fontWeight: 'bold' }}>Achievements:</h4>
-            <ul style={{ paddingLeft: '20px', margin: '5px 0 0 0' }}>
-              <li style={{ marginBottom: '5px' }}>Improvement title: Successfully automated shaft appearance inspections and developed predictive quality models based on tool-bit life cycles</li>
+              <li style={{ marginBottom: '5px', textAlign: 'justify' }}>Spearheaded the development of automated testing equipment, achieving a 20% reduction in testing time</li>
+              <li style={{ marginBottom: '5px', textAlign: 'justify' }}>Automated shaft appearance inspections and developed predictive quality models driven by tool-bit life cycles to eliminate manual errors.</li>
+              <li style={{ marginBottom: '5px', textAlign: 'justify' }}>Evaluated complex technical documentation to guarantee strict alignment with customer-defined specifications.</li>
             </ul>
           </VerticalTimelineElement>
 
