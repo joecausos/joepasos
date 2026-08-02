@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/joepasos/static/css/main.b30c82dd.css",
-    "main.js": "/joepasos/static/js/main.0aae27d7.js",
+    "main.js": "/joepasos/static/js/main.2beb3edb.js",
     "static/js/453.b05d8aa5.chunk.js": "/joepasos/static/js/453.b05d8aa5.chunk.js",
     "static/media/project_001_technical_seo_github.png": "/joepasos/static/media/project_001_technical_seo_github.be6b6ca825513f56d85d.png",
     "static/media/JoePasos.png": "/joepasos/static/media/JoePasos.c486aa9b9b69d7dd1d12.png",
@@ -10,11 +10,11 @@
     "static/media/bg-dark.png": "/joepasos/static/media/bg-dark.f420c6b8458af72de935.png",
     "index.html": "/joepasos/index.html",
     "main.b30c82dd.css.map": "/joepasos/static/css/main.b30c82dd.css.map",
-    "main.0aae27d7.js.map": "/joepasos/static/js/main.0aae27d7.js.map",
+    "main.2beb3edb.js.map": "/joepasos/static/js/main.2beb3edb.js.map",
     "453.b05d8aa5.chunk.js.map": "/joepasos/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b30c82dd.css",
-    "static/js/main.0aae27d7.js"
+    "static/js/main.2beb3edb.js"
   ]
 }
